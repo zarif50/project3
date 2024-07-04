@@ -14,10 +14,10 @@ const Header = () => {
     <div className='header'>
        { <img src={assets.header_img}alt="" className="header" /> }
         <div className="header-contents">
-            <h2>Order Your Favourite Food Here</h2>
+            <h2>এখানে আপনার পছন্দের খাবার অর্ডার করুন</h2>
 
             
-            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest experience and cutlinery expertise.Our mission is to satisfy your cravings</p>
+            <p>একটি বৈচিত্র্যময় মেনু থেকে বেছে নিন চমৎকার অভিজ্ঞতা এবং কাটলাইনারির দক্ষতার সাথে তৈরি করা খাবারের একটি মনোরম বিন্যাস। আমাদের লক্ষ্য হল আপনার আকাঙ্ক্ষা মেটানো।</p>
             <button>View Menu</button>
         </div>
     </div>

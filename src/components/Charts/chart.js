@@ -7,14 +7,14 @@ import { PieChart, Pie, Cell, Tooltip, Legend, BarChart, XAxis, YAxis, Cartesian
 const Chart = () => {
     // Initialize state
     const [data, setData] = useState([
-        { name: "Salad", value: 10 },
-        { name: "Rolls", value: 50 },
-        { name: "Desert", value: 20 },
-        { name: "sandwhich", value: 20 },
-        { name: "Cake", value: 20 },
-        { name: "Pureveg", value: 20 },
-        { name: "Pasta", value: 20 },
-        { name: "Noodles", value: 20 }
+        { name: "কাচ্চি", value: 10 },
+        { name: "রেজালা", value: 50 },
+        { name: "মিষ্টান্ন", value: 20 },
+        { name: "সন্ধ্যা নাস্তা", value: 20 },
+        { name: "মাছ", value: 20 },
+        { name: "সবজি", value: 20 },
+        { name: "নুডলস", value: 20 },
+        { name: "কাবাব", value: 20 }
     ]);
 
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042',];
