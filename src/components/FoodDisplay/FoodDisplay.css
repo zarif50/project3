@@ -1,15 +1,29 @@
-.food-display{
+.food-display {
     margin-top: 30px;
 }
-.food-display h2{
-    font-size: max(2vw,24px);
-    font-weight: 600;
-}
-.food-display-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
-    margin-top: 30px;
-    gap: 30px;
-    row-gap: 50px;
 
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Gap between grid items */
+    margin-top: 30px;
+}
+
+.food-display-item {
+    transform: rotate(-2deg); /* Rotate each item slightly for a zigzag effect */
+    border: 1px solid #ccc; /* Example border styling */
+    padding: 20px;
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color for better visibility */
+}
+
+.food-display-item:nth-child(even) {
+    transform: rotate(2deg); /* Rotate even items in the opposite direction */
 }

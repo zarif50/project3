@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
        <img src={assets.logo} alt=""/>
-       <p>Craving delicious food delivered fast? Look no further! With our app, enjoy your favorite meals from top restaurants, all at the tap of a button. Fresh, hot, and delivered to your doorstep in no time. Download now and savor the convenience of effortless dining!</p>
+       <p>আমাদের ওয়েবসাইটে স্বাগতম। এখানে আপনি  খাবারের নতুন ধরণ, এবং বিভিন্ন স্বাদের মজাদার অপশন পেতে পারবেন। আমাদের সম্পর্কে আরও জানতে আমাদের সামাজিক যোগাযোগ পৃষ্ঠাগুলি দেখুন।</p>
+
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon}  alt="" />
@@ -27,8 +28,8 @@ const Footer = () => {
          <div className="footer-content-right">
             <h2> GET IN TOUCH </h2>
             <ul> 
-                <li>0197849064</li>
-                <li>tanzil.cse@tomato.com</li>
+                <li>০১৯৭৮৪৯০৬৪</li>
+                <li>tanzil.cse@starKabab.com</li>
             </ul>
              </div>
           </div> 
