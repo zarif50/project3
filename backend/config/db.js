@@ -4,6 +4,11 @@ export const connectDB = async () => {
     await mongoose.connect('mongodb+srv://tanimtanzilislam9:16137025081203@cluster0.qr0qwa5.mongodb.net/FOOD-APPmon?retryWrites=true&w=majority&appName=Cluster0').then(()=>console.log("DB Connected"));
 }
 
+  
+  
+  
+  
+
 //
 
 
