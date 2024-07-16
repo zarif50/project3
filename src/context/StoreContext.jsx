@@ -20,18 +20,12 @@ const StoreContextProvider = (props) => {
     }
   }
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => {
-      const newCartItems = { ...prev };
-      if (newCartItems[itemId] > 0) {
-        newCartItems[itemId] -= 1;
-      }
-      if (newCartItems[itemId] === 0) {
-        delete newCartItems[itemId];
-      }
-      return newCartItems;
-    });
-  };
+ const removeFromCart = async(itemId) =>{
+   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
+   if(token){
+      await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
+   }
+ }
 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
@@ -45,6 +39,7 @@ const StoreContextProvider = (props) => {
     }
     return totalAmount;
   };
+  
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
