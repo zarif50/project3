@@ -5,9 +5,9 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+ // const url = "http://localhost:4000";
  // const url ="  const url ="REACT_APP_API_URL=https://project3-api.vercel.app";
-
+ const url = process.env.REACT_APP_API_URL;
   const [token, setToken] = useState("");
 
   const addToCart = async (itemId) => {
