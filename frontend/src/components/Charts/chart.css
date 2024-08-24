@@ -1,8 +1,80 @@
+/*
 .App{
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 2px;
-    
+
+}/
+
+/ chart.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.inputs div {
+    margin: 10px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #0088FE;
+    box-shadow: 0 0 5px rgba(0, 136, 254, 0.5);
+}
+
+.App {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.PieChart,
+.BarChart {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .App {
+        flex-direction: column;
+    }
+
+    .PieChart, .BarChart {
+        margin-bottom: 20px;
+    }
 }
