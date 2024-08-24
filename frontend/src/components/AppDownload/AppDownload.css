@@ -1,22 +1,62 @@
-.app-download{
-    margin:auto auto;
-    margin-top: 100px;
-    font-size:max(3vw,20px);
-    text-align:center;
-    font-weight: 500;  
+.app-download {
+    margin: 100px auto; /* Centered with a top margin */
+    font-size: max(3vw, 20px);
+    text-align: center;
+    font-weight: 500;
+    color: #333; /* Darker color for better contrast */
+    line-height: 1.4;
+    padding: 20px; /* Added padding for spacing */
+    background: #fff; /* Solid background */
+    border-radius: 15px; /* Rounded corners */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
-.app-download-platforms{
-    display:flex;
+
+.app-download::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size: 300%; /* Increased size for smoother transitions */
+    border-radius: 18px; /* Rounded corners */
+    z-index: -1;
+    animation: rotateColors 6s linear infinite;
+}
+
+@keyframes rotateColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.app-download-platforms {
+    display: flex;
     justify-content: center;
-    gap:max(2vw,10px);
+    gap: max(2vw, 20px); /* Increased gap for better spacing */
     margin-top: 40px;
+    padding: 10px 0; /* Added padding for spacing */
 }
-.app-download-platforms img{
-    width:max(30vw,120px);
-    max-width:180px;
-    transition: 0.5s;
-    cursor:pointer;
+
+.app-download-platforms img {
+    width: max(30vw, 120px);
+    max-width: 180px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+    cursor: pointer;
+    border-radius: 10px; /* Slight rounding on images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
-.app-download-platforms img:hover{
-    transform:scale(1.05)
+
+.app-download-platforms img:hover {
+    transform: scale(1.1); /* Increased scale for more noticeable effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
