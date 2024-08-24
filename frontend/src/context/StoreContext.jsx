@@ -38,6 +38,12 @@ const StoreContextProvider = (props) => {
     return totalAmount;
   };
 
+  const resetCart = () => {
+    setCartItems({});
+};
+
+
+
   useEffect(() => {
     if (localStorage.getItem("token")) {
       setToken(localStorage.getItem("token"));
@@ -54,6 +60,7 @@ const StoreContextProvider = (props) => {
 //url,
     token,
     setToken,
+    resetCart,
   };
 
   return <StoreContext.Provider value={contextValue}>{props.children}</StoreContext.Provider>;
